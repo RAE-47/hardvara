@@ -1,3 +1,4 @@
+/* Uppdaterad CSS: visar #selected endast när .visible sätts och säkerställer att bilder syns */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(to right, #e5ebf8, #e7f4eb);
@@ -51,27 +52,47 @@ h1 {
 .adv { color: #158e46; }
 .dis { color: #c71515; }
 .info { margin:1em 0 .5em 0;}
+
+/* Standard: göm #selected helt (ingen gul rand) */
 #selected {
+    display: none;
+}
+
+/* När JS vill visa rutan ska den lägga till klassen .visible */
+#selected.visible {
+    display: block !important;
     margin: 2em auto;
     max-width: 600px;
-    background: #fff9e5;
+    background: #ffffff;
     padding: 1.1em 1em;
     border-radius: 12px;
-    box-shadow: 0 1px 8px #ffd90055;
-    border-left: 6px solid #ffd900;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     font-size: 1.07em;
+    border: 1px solid rgba(0,0,0,0.04);
 }
-#selected img {
-    display: block;
+
+/* Bild i rutan - tvinga synlighet och responsiv storlek */
+#selected.visible img,
+#selected.visible .selected-img {
+    display: block !important;
     margin: 0.7em auto;
-    width: 100px;
-    height: 100px;
+    max-width: 100% !important;
+    width: 120px;
+    height: auto !important;
     object-fit: contain;
     background: #f3f7ff;
     border-radius: 10px;
     box-shadow:0 2px 7px #aac3ed33;
 }
+
+/* Extra: om någon annan CSS skulle lägga på en gul kant, kraft-överskriv här */
+#selected.visible {
+    border-left: none !important;
+    background-image: none !important;
+}
+
+/* Mobil */
 @media (max-width:700px) {
     .card {flex-direction: column; gap:0.5em;}
-    #selected {font-size: 1em;}
+    #selected.visible {font-size: 1em;}
 }
