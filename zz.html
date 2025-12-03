@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Datorns Hårdvara & Windows</title>
+    <link rel="stylesheet" href="jj.css">
+</head>
+<body>
+    <h1>Datorns Hårdvara & Windows</h1>
+    <p class="lead">Klicka på en komponent för att markera och jämföra – se bilden och lär dig mer!</p>
+    <div id="content">
+        <div class="card" data-idx="0">
+            <img src="images/CPU.jpg" alt="CPU">
+            <div class="card-info">
+                <div class="info bold">CPU</div>
+                <div>Utför beräkningar, är datorns hjärna.</div>
+                <div><span class="bold">Funktion:</span> Kör program, styr systemet.</div>
+                <div><span class="bold adv">Fördel:</span> Snabb, klarar multitasking.</div>
+                <div><span class="bold dis">Nackdel:</span> Kan bli varm, dyr.</div>
+                <div><span class="bold">Vid skada:</span> Datorn startar ej eller kraschar.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="1">
+            <img src="images/gpu.jpg" alt="GPU">
+            <div class="card-info">
+                <div class="info bold">GPU</div>
+                <div>Renderar grafik, används i spel/video.</div>
+                <div><span class="bold">Funktion:</span> Visar bilder/video och snabbar upp grafiktunga appar.</div>
+                <div><span class="bold adv">Fördel:</span> Bra för gaming, grafik och AI.</div>
+                <div><span class="bold dis">Nackdel:</span> Drar mycket ström, kostar mycket.</div>
+                <div><span class="bold">Vid skada:</span> Ingen bild, störningar, kraschar.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="2">
+            <img src="images/ram.webp" alt="RAM">
+            <div class="card-info">
+                <div class="info bold">RAM</div>
+                <div>Snabbt arbetsminne för aktuell data.</div>
+                <div><span class="bold">Funktion:</span> Tillfällig lagring, hjälper multitasking.</div>
+                <div><span class="bold adv">Fördel:</span> Ger snabb respons, lätt att byta.</div>
+                <div><span class="bold dis">Nackdel:</span> Förlorar allt vid strömavbrott.</div>
+                <div><span class="bold">Vid skada:</span> Frysningar, appkrascher.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="3">
+            <img src="images/ssd.webp" alt="SSD">
+            <div class="card-info">
+                <div class="info bold">SSD</div>
+                <div>Snabb lagring av filer och OS.</div>
+                <div><span class="bold">Funktion:</span> Snabb filåtkomst, OS startar snabbare.</div>
+                <div><span class="bold adv">Fördel:</span> Tyst, stöttålig, blixtsnabb.</div>
+                <div><span class="bold dis">Nackdel:</span> Dyrare än HDD.</div>
+                <div><span class="bold">Vid skada:</span> Dataförlust, Windows startar ej.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="4">
+            <img src="images/hdd.jpg" alt="HDD">
+            <div class="card-info">
+                <div class="info bold">HDD</div>
+                <div>Stor, billig lagring med rörliga delar.</div>
+                <div><span class="bold">Funktion:</span> Lagrar mycket data och backup.</div>
+                <div><span class="bold adv">Fördel:</span> Billig per GB.</div>
+                <div><span class="bold dis">Nackdel:</span> Långsammare än SSD, känslig för stötar.</div>
+                <div><span class="bold">Vid skada:</span> Klickande ljud, kan ej läsa data.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="5">
+            <img src="images/nätaggregat.jpg" alt="Nätaggregat">
+            <div class="card-info">
+                <div class="info bold">Nätaggregat</div>
+                <div>Ger ström till allt.</div>
+                <div><span class="bold">Funktion:</span> Försörjer komponenter.</div>
+                <div><span class="bold adv">Fördel:</span> Skyddar mot strömspikar.</div>
+                <div><span class="bold dis">Nackdel:</span> Dålig PSU kan förstöra datorn.</div>
+                <div><span class="bold">Vid skada:</span> Startar ej, elproblem.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="6">
+            <img src="images/moderkort.jpg" alt="Moderkort">
+            <div class="card-info">
+                <div class="info bold">Moderkort</div>
+                <div>Kopplar ihop alla delar.</div>
+                <div><span class="bold">Funktion:</span> Låter komponenter kommunicera.</div>
+                <div><span class="bold adv">Fördel:</span> Möjligt att uppgradera.</div>
+                <div><span class="bold dis">Nackdel:</span> Jobbig att byta.</div>
+                <div><span class="bold">Vid skada:</span> Instabilt eller startar inte.</div>
+            </div>
+        </div>
+        <div class="card" data-idx="7">
+            <img src="images/windows.png" alt="Windows">
+            <div class="card-info">
+                <div class="info bold">Windows</div>
+                <div>Ett populärt operativsystem av Microsoft.</div>
+                <div><span class="bold">Funktion:</span> Startar program, hanterar filer och hårdvara.</div>
+                <div><span class="bold adv">Fördel:</span> Enkelt, stort stöd för spel och program.</div>
+                <div><span class="bold dis">Nackdel:</span> Virusrisk, kräver licens.</div>
+                <div><span class="bold">Vid skada:</span> Kraschar, seg eller startar inte alls.</div>
+            </div>
+        </div>
+    </div>
+    <div id="selected"></div>
+    <script src="i.js"></script>
+</body>
+</html>
